@@ -80,7 +80,7 @@ body
 }
 #demo
 {
-	background:url(demo.jpg);
+	background:url(../demo.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 }
