@@ -66,8 +66,8 @@ body
 }
 #demo,#award,#map
 {
-	height: 100px;
-	width: 150px;
+	height:10px;
+	width:20px;
 	margin-bottom: 15px;
 	position: relative;
 	border: 2px solid #3f0c1f;
