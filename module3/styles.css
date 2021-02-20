@@ -66,8 +66,8 @@ body
 }
 #demo,#award,#map
 {
-	height:10px;
-	width:20px;
+	height:100px;
+	width:150px;
 	margin-bottom: 15px;
 	position: relative;
 	border: 2px solid #3f0c1f;
@@ -92,7 +92,7 @@ body
 }
 #map
 {
-	background:url(https://saviour-1999.github.io/one/module3/map.png);
+	background:url("https://saviour-1999.github.io/one/module3/map.png");
 	background-position: center;
 	background-repeat: no-repeat;
 }
