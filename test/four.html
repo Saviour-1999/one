@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>clock</title>
+    <style>
+      a
+      {
+          background-color: blue;
+          color: rgb(255, 255, 255);
+      }
+      a:hover
+      {
+        box-shadow: 0px 1px 5px 1px rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" target="_blank" href="http://facebook.com" style="border: 2px solid black;">facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="http://instagram.com" style="border: 2px solid black;">instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="http://twitter.com" style="border: 2px solid black;">twitter</a>
+        </li>
+      </ul>
+    <h1>CLOCK</h1>
+    <script>
+      let a;
+      let time;
+      let date;
+      const options={weekday:'long',year: 'numeric',month: 'long', day: 'numeric'};
+      setInterval(()=>{
+        a=new Date();
+        date= a.toLocaleDateString();
+        time=a.getHours() + ":"+a.getMinutes() +":"+a.getSeconds();
+        document.getElementById('time').innerHTML=time +"<br>date: "+date;
+      },1000);
+      time=new Date();
+      document.getElementById('time').innerHTML=time;
+   </script>
+    <div class="jumbotron">
+      <h1 class="display-4">Current Time: <span id="time"></span></h1>
+      <p class="lead">Time dekhte eschilam.Time dekha hoye geche.akhon chole jacchi!</p>
+      <hr class="my-4">
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+ 
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
