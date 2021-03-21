@@ -9,7 +9,7 @@ body
 	border: 2px solid black;
 }
 #logo-img{
-	background:url('../logo.jpg') no-repeat;
+	background:url('logo.jpg') no-repeat;
 	width: 150px;
 	height: 120px;
 	margin: 10px 15px 10px 0px;
@@ -80,19 +80,19 @@ body
 }
 #demo
 {
-	background:url(../demo.jpg);
+	background:url(demo.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 }
 #award
 {
-	background:url(../award.jpg);
+	background:url(award.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 }
 #map
 {
-	background:url(../map.png);
+	background:url(map.png);
 	background-position: center;
 	background-repeat: no-repeat;
 }
