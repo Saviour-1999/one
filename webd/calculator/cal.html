@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylecal.css">
+</head>
+<body id="body">
+    <div class="container">
+        <h1 style="color:aqua ;">Calculator</h1>
+        <div class="calculator">
+        <input type="text" name="screen" id="screen">
+    </div>
+    <br>
+    <input type="button" onclick="dis('clear')" value="c" id="inp">
+    <input type="button" onclick="dis('%')" value="%" id="inp">
+    <input type="button" onclick="dis('back')" value="<-" id="inp">
+    <input type="button" onclick="dis('/')" value="/" id="inp">
+    <br>
+    <input type="button" onclick="dis('7')" value="7" id="inp">
+    <input type="button" onclick="dis('8')" value="8" id="inp">
+    <input type="button" onclick="dis('9')" value="9" id="inp">
+    <input type="button" onclick="dis('*')" value="*" id="inp">
+    <br>
+    <input type="button" onclick="dis('4')" value="4" id="inp">
+    <input type="button" onclick="dis('5')" value="5" id="inp">
+    <input type="button" onclick="dis('6')" value="6" id="inp">
+    <input type="button" onclick="dis('-')" value="-" id="inp">
+    <br>
+    <input type="button" onclick="dis('1')" value="1" id="inp">
+    <input type="button" onclick="dis('2')" value="2" id="inp">
+    <input type="button" onclick="dis('3')" value="3" id="inp">
+    <input type="button" onclick="dis('+')" value="+" id="inp">
+    <br>
+    <input type="button" onclick="dis('00')" value="00" id="inp">
+    <input type="button" onclick="dis('0')" value="0" id="inp">
+    <input type="button" onclick="dis('.')" value="." id="inp">
+    <input type="button" onclick="eval()" value="=" id="inp">
+    <br>
+    </div>
+</body>
+<script src="scrcal.js"></script>
+</html>
